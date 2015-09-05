@@ -20,7 +20,12 @@
 		<%= f.text_field :location %>
 	</p>
 	<p>
+		<label> Branch </label>
+		<%= f.select :branch_id, Branch.all.map { |branch| [ branch.name, branch.id ] }, :include_blank => true %>
+	</p>
+	<p>
 		<%= f.submit %>
 	</p>
+	
 <% end %>
 

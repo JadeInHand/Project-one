@@ -1,3 +1,19 @@
 // Place all the styles related to the Parties controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+ .navbar {
+ 	position: fixed;
+ 	background-color: rgb(0, 53, 128);
+ 	width: 100%;
+ 	height: 20px;
+ 	top: 0px;
+ 	text-align: center;
+ 	color: white;
+ }
+
+ body {
+ 	text-align: center;
+ 	
+ }

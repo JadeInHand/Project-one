@@ -7,7 +7,8 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<nav>
+<div class="navbar">
+	<nav class=>
 		<a><%= link_to 'Home', '/' %></a>
 		<a><%= link_to 'Branches of Government', branches_path %></a>
 		<a><%= link_to 'Create Branch', new_branch_path %></a>
@@ -16,6 +17,7 @@
 		<a><%= link_to 'Parties', parties_path %></a>
 		<a><%= link_to 'New Party', new_party_path %></a>
 	</nav>
+</div>
 
 <%= yield %>
 

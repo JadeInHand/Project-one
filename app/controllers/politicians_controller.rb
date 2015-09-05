@@ -37,7 +37,7 @@ class PoliticiansController < ApplicationController
 
   private
   def politician_params
-  	params.require(:politician).permit(:name, :role, :previous_works, :image, :location)
+  	params.require(:politician).permit(:name, :role, :previous_works, :image, :location, :branch_id, :party_id)
   end
 end
 
