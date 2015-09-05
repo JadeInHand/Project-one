@@ -1,0 +1,26 @@
+
+<h1> EDIT A POLITICIAN </h1>
+
+	<%= form_for @politician do |f| %>
+	<p>
+		<%= f.label :name %>
+		<%= f.text_field :name %>
+	</p>
+	<p>
+		<%= f.label :role %>
+		<%= f.text_field :role %>
+	</p>
+		<%= f.label :previous_works %>
+		<%= f.text_field :previous_works %>
+	<p>
+		<%= f.label :image %>
+		<%= f.text_field :image %>
+	</p>
+	<p>
+		<%= f.label :location %>
+		<%= f.text_field :location %>
+	</p>
+	<p>
+		<%= f.submit %>
+	</p>
+<% end %>

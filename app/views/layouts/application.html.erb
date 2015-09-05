@@ -7,6 +7,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<nav>
+		<a><%= link_to 'Home', '/' %></a>
+		<a><%= link_to 'Branches of Government', branches_path %></a>
+		<a><%= link_to 'Create Branch', new_branch_path %></a>
+		<a><%= link_to 'Politicians', politicians_path %></a>
+		<a><%= link_to 'Create Politician', new_politician_path %></a>
+	</nav>
 
 <%= yield %>
 

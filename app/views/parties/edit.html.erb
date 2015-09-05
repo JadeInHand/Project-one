@@ -1,0 +1,29 @@
+<h1>Edit Party</h1>
+<%= form_for @party do |f| %>
+	<p>
+		<%= f.label :name %>
+		<%= f.text_field :name %>
+	</p>
+	<p>
+		<%= f.label :ideology %>
+		<%= f.text_field :ideology %>
+	</p>
+		<%= f.label :seats %>
+		<%= f.text_field :seats %>
+	<p>
+		<%= f.label :members %>
+		<%= f.text_field :members %>
+	</p>
+	<p>
+		<%= f.label :history %>
+		<%= f.text_field :history %>
+	</p>
+	<p>
+		<%= f.label :emblem %>
+		<%= f.text_field :emblem %>
+	</p>
+	<p>
+		<%= f.submit %>
+	</p>
+<% end %>
+

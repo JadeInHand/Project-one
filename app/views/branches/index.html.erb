@@ -1,0 +1,5 @@
+<h1> INDEX </h1>
+
+<% @branches.each do |branch| %>
+	<p><%= link_to( branch.name, branch ) %></p>
+<% end %>

@@ -1,0 +1,23 @@
+<h1> EDIT PAGE </h1>
+
+<%= form_for @branch do |f| %>
+<p>
+<%= f.label :name %>
+<%= f.text_field :name %>
+</p>
+<p>
+<%= f.label :functions %>
+<%= f.text_field :functions %>
+</p>
+<%= f.label :powers %>
+<%= f.text_field :powers %>
+<p>
+<%= f.label :history %>
+<%= f.text_field :history %>
+</p>
+<p>
+<%= f.submit %>
+</p>
+<% end %>
+
+
