@@ -1,2 +1,28 @@
 <h1>Parties#new</h1>
-<p>Find me in app/views/parties/new.html.erb</p>
+<%= form_for @parties do |f| %>
+	<p>
+		<%= f.label :name %>
+		<%= f.text_field :name %>
+	</p>
+	<p>
+		<%= f.label :ideology %>
+		<%= f.text_field :ideology %>
+	</p>
+		<%= f.label :seats %>
+		<%= f.number_field :seats %>
+	<p>
+		<%= f.label :members %>
+		<%= f.number_field :members %>
+	</p>
+	<p>
+		<%= f.label :history %>
+		<%= f.text_field :history %>
+	</p>
+	<p>
+		<%= f.label :emblem %>
+		<%= f.text_field :emblem %>
+	</p>
+	<p>
+		<%= f.submit %>
+	</p>
+<% end %>
