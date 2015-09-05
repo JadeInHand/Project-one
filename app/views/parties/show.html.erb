@@ -1,2 +1,15 @@
-<h1>Parties#show</h1>
-<p>Find me in app/views/parties/show.html.erb</p>
+<h1> <%= @party.name %> </h1>
+
+<p><%= image_tag @party.emblem %></p>
+
+<ul>Ideology:</ul><li><%= @party.ideology %></li>
+<ul>Seats:</ul><li><%= @party.seats %></li>
+<ul>Members:</ul><li><%= @party.members %></li>
+<ul>History:</ul><li><%= @party.history %></li>
+
+<p>
+<%= link_to 'Edit', edit_party_path %>
+<%= button_to('Delete', party_path(@party.id), :method => 'delete') %>
+</p>
+
+

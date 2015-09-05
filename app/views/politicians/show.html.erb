@@ -5,4 +5,10 @@
 <p> <%= @politician.previous_works %> </p>
 <p> <%= @politician.location %> </p>
 
+<p>
+<%= link_to 'Edit', edit_politician_path %>
+<%= button_to('Delete', politician_path(@branch.id), :method => 'delete') %>
+</p>
+
+
 

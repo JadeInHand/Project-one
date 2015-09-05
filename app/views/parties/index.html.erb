@@ -1,2 +1,5 @@
-<h1>Parties#index</h1>
-<p>Find me in app/views/parties/index.html.erb</p>
+<h1> All parties </h1>
+
+<% @parties.each do |party| %>
+	<p> <%= link_to "#{ party.name }", party_path(party.id) %> </p>
+<% end %>
