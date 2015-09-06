@@ -25,15 +25,18 @@ a.navlinks {
 	margin: 3em 10em 10em 10em;
 	height: 100%;
 	padding: 3em;
-	box-shadow: -1px 3px 19px #555F6E; 
+	box-shadow: 3px 6px 23px #707070; 
 	font-family: 'Roboto Condensed', sans-serif;
 	font-weight: 400;
 	text-align: center;
+	border: 1px solid black;
+	border-radius: 13.65px;
 }
 
 img.homeflag {
 	max-width: 200px;
 }
+
 .navbar {
 	position: fixed;
 	background-image: url("navbar-pattern.jpg");
@@ -43,7 +46,7 @@ img.homeflag {
 	left: 0px;
 	color: white;
 	font-size: 18px;
-	box-shadow: -1px 3px 19px #555F6E;
+	box-shadow: -1px 3px 19px #707070;
 	text-align: left;
 }
 
