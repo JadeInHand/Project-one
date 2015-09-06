@@ -13,11 +13,3 @@
  *= require_tree .
  *= require_self
  */
-
-.navlinks:link {
-	color: white;
-}
-
-.navlinks:visited {
-	color: white;
-}

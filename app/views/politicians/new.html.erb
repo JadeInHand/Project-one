@@ -8,10 +8,10 @@
 		</p>
 		<p>
 			<%= f.label :role %>
-			<%= f.text_field :role %>
+			<%= f.text_area :role %>
 		</p>
 			<%= f.label :previous_works %>
-			<%= f.text_field :previous_works %>
+			<%= f.text_area :previous_works %>
 		<p>
 			<%= f.label :image %>
 			<%= f.text_field :image %>
@@ -25,9 +25,12 @@
 			<%= f.select :branch_id, Branch.all.map { |branch| [ branch.name, branch.id ] }, :include_blank => true %>
 		</p>
 		<p>
+			<label> Party </label>
+			<%= f.select :party_id, Party.all.map { |party| [ party.name, party.id ] }, :include_blank => true %>
+		</p>
+		<p>
 			<%= f.submit %>
 		</p>
-		
 	<% end %>
 </div>
 
