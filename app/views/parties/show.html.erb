@@ -1,3 +1,4 @@
+<div class="info">
 <h1> <%= @party.name %> </h1>
 
 <p><%= image_tag @party.emblem %></p>
@@ -11,5 +12,6 @@
 <%= link_to 'Edit', edit_party_path %>
 <%= button_to('Delete', party_path(@party.id), :method => 'delete') %>
 </p>
+</div>
 
 

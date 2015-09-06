@@ -1,31 +1,33 @@
-<h1>Enter a Politician</h1>
+<div class="info">
+	<h1>Enter a Politician</h1>
 
-<%= form_for @politicians do |f| %>
-	<p>
-		<%= f.label :name %>
-		<%= f.text_field :name %>
-	</p>
-	<p>
-		<%= f.label :role %>
-		<%= f.text_field :role %>
-	</p>
-		<%= f.label :previous_works %>
-		<%= f.text_field :previous_works %>
-	<p>
-		<%= f.label :image %>
-		<%= f.text_field :image %>
-	</p>
-	<p>
-		<%= f.label :location %>
-		<%= f.text_field :location %>
-	</p>
-	<p>
-		<label> Branch </label>
-		<%= f.select :branch_id, Branch.all.map { |branch| [ branch.name, branch.id ] }, :include_blank => true %>
-	</p>
-	<p>
-		<%= f.submit %>
-	</p>
-	
-<% end %>
+	<%= form_for @politicians do |f| %>
+		<p>
+			<%= f.label :name %>
+			<%= f.text_field :name %>
+		</p>
+		<p>
+			<%= f.label :role %>
+			<%= f.text_field :role %>
+		</p>
+			<%= f.label :previous_works %>
+			<%= f.text_field :previous_works %>
+		<p>
+			<%= f.label :image %>
+			<%= f.text_field :image %>
+		</p>
+		<p>
+			<%= f.label :location %>
+			<%= f.text_field :location %>
+		</p>
+		<p>
+			<label> Branch </label>
+			<%= f.select :branch_id, Branch.all.map { |branch| [ branch.name, branch.id ] }, :include_blank => true %>
+		</p>
+		<p>
+			<%= f.submit %>
+		</p>
+		
+	<% end %>
+</div>
 

@@ -14,12 +14,10 @@
  *= require_self
  */
 
+.navlinks:link {
+	color: white;
+}
 
-
- .navbar {
- 	position: fixed;
- 	background-color: blue;
- 	width: 100%;
- 	height: relative;
- 	text-align: center;
- }
+.navlinks:visited {
+	color: white;
+}

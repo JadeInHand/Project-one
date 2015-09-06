@@ -1,5 +1,7 @@
-<h1> Branches of Government </h1>
+<div class="info">
+	<h1> Branches of Government </h1>
 
-<% @branches.each do |branch| %>
-	<p><%= link_to( branch.name, branch ) %></p>
-<% end %>
+	<% @branches.each do |branch| %>
+		<p><%= link_to( branch.name, branch ) %></p>
+	<% end %>
+</div>

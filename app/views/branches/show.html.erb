@@ -1,13 +1,15 @@
-<h1> <%= @branch.name %></h1>
+<div class="info">
+	<h1> <%= @branch.name %></h1>
 
-<ul>
-	<li><%= @branch.functions %></li>
-	<li><%= @branch.powers %></li>
-	<li><%= @branch.history %></li>
-</ul>
+	<ul>
+		<li><%= @branch.functions %></li>
+		<li><%= @branch.powers %></li>
+		<li><%= @branch.history %></li>
+	</ul>
 
-<p>
-<%= link_to 'Edit', edit_branch_path %>
-<%= button_to('Delete', branch_path(@branch.id), :method => 'delete') %>
-</p>
+	<p>
+		<%= link_to 'Edit', edit_branch_path %>
+		<%= button_to('Delete', branch_path(@branch.id), :method => 'delete') %>
+	</p>
+</div>
 
