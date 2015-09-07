@@ -1,7 +1,7 @@
 <div class="info">
 <h1> <%= @party.name %> </h1>
 
-<p><%= image_tag @party.emblem %></p>
+<p><%= image_tag @party.emblem, :class => "thumb" %></p>
 
 <ul>Ideology:</ul><li><%= @party.ideology %></li>
 <ul>Seats:</ul><li><%= @party.seats %></li>
