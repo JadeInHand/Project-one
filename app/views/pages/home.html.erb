@@ -1,9 +1,15 @@
 <div class="info">
 	<h1>HOME</h1>
 	<ul>
-		<p><%= link_to "Branches of Government", branches_path %></p>
-		<p><%= link_to "Politicians", politicians_path %></p>
-		<p><%= link_to "Parties", parties_path %></p>
+		<div class="firstcircle">
+			<p><%= link_to "Branches of Government", branches_path %></p>
+		</div>
+		<div class="secondcircle">
+			<p><%= link_to "Politicians", politicians_path %></p>
+		</div>
+		<div class="thirdcircle">
+			<p><%= link_to "Parties", parties_path %></p>
+		</div>
 	</ul>
 	<%= image_tag "Flag_of_Finland.svg.png", :class => "homeflag" %>
 </div>
