@@ -3,6 +3,9 @@
 
 	<% @politicians.each do |politician| %>
 		<p>
+			<%= link_to (image_tag "#{ politician.image }", :class => "polindex"), politician_path(politician.id) %>
+		</p>
+		<p>
 			<%= link_to "#{ politician.name }", politician_path(politician.id)  %>
 		</p>
 	<% end %>
