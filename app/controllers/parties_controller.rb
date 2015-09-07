@@ -1,6 +1,7 @@
 class PartiesController < ApplicationController
   def index
   	@parties = Party.all
+    @parliament = Branch.find_by :name => "Parliament"
   end
 
   def show
