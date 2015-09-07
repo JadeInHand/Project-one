@@ -2,13 +2,13 @@
 	<h1> All parties </h1>
 
 	<div id="canvas-holder">
-		<h2>Seats in <%= link_to "Parliament", branch_path(@parliament) %> </h2>
+		<h2>Seats in <%= link_to "Parliament", branch_path(@parliament) %></h2>
 		<canvas id="chart-area"/>
 	</div>
-
+	<h1>Parties and their Emblem's</h1>
 	<% @parties.each do |party| %>
 		<% if party.emblem? %>
-			<p> <%= link_to (image_tag "#{ party.emblem }", :class => "thumb" ), party_path(party.id)%> </p>
+			<p> <%= link_to (image_tag "#{ party.emblem }", :class => "thumb" ), party_path(party.id) %> </p>
 			<p> <%= link_to "#{ party.name }", party_path(party.id) %> </p>
 		<% else %>
 			<p> <%= link_to "#{ party.name }", party_path(party.id) %> </p>
