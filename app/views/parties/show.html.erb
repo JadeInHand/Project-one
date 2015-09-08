@@ -1,17 +1,15 @@
 <div class="info">
-<h1> <%= @party.name %> </h1>
+	<h1> <%= @party.name %> </h1>
 
-<p><%= image_tag @party.emblem, :class => "thumb" %></p>
+	<p><%= image_tag @party.emblem, :class => "thumb" %></p>
 
-<ul>Ideology:</ul><li><%= @party.ideology %></li>
-<ul>Seats:</ul><li><%= @party.seats %></li>
-<ul>Members:</ul><li><%= @party.members %></li>
-<ul>History:</ul><li><%= @party.history %></li>
+	<ul>Ideology:</ul><li><%= @party.ideology %></li>
+	<ul>Seats:</ul><li><%= @party.seats %></li>
+	<ul>Members:</ul><li><%= @party.members %></li>
+	<ul>History:</ul><li><%= @party.history %></li>
 
-<p>
-<%= link_to 'Edit', edit_party_path %>
-<%= button_to('Delete', party_path(@party.id), :method => 'delete') %>
-</p>
+	<p>
+		<%= link_to 'Edit', edit_party_path %>
+		<%= button_to('Delete', party_path(@party.id), :method => 'delete') %>
+	</p>
 </div>
-
-
