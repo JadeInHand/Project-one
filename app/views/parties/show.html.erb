@@ -9,10 +9,10 @@
 	<ul>History:</ul><li><%= @party.history %></li>
 
 	<a>
-		<h3><strong> Images of <%= link_to "Politicians", politicians_path %> who are in this <%= link_to "Party", parties_path %> </strong></h3>
+		<h3><strong> Images of <%= link_to "Politicians", politicians_path %> who are in this <%= link_to "Party", parties_path %> below: </strong></h3>
 		<% @party.politicians.each do |politician| %>
 		<div class="smallthumb">
-			<%= link_to(image_tag(politician.image, :class => "smallthumb"), politician) %>
+			<%= link_to(image_tag(politician.image), politician) %>
 		</div>
 		<% end %>
 	</a>
