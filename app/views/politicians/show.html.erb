@@ -1,15 +1,15 @@
 <div class="info">
-	<h1><%= raw @politician.name %></h1>
-	
-		<h3> <%= @politician.role %> </h3>
-	
-		<p> <%= image_tag @politician.image, :class => "thumb" %> </p>
-	
-		<p> <%= raw @politician.previous_works %> </p>
-	
-		<p> <%= @politician.location %> </p>
-	</div>
+	<h1><%= raw @politician.name %></h1>	
+	<h3> <%= link_to "#{ @politician.role }", branch_path(@politician.branch_id) %> </h3>
+	<p> <%= image_tag @politician.image, :class => "thumb" %> </p>
+	<p> <%= raw @politician.previous_works %> </p>
+	<p> <%= @politician.location %> </p>
 
+	<% unless @politician.party.nil? %>
+		<p> 
+		<%= link_to (image_tag "#{@politician.party.emblem}", :class => "polindex"), party_path(@politician.party_id) %> 
+		</p>
+	<% end %>
 	<p>
 		<%= link_to 'Edit', edit_politician_path %>
 		<%= button_to('Delete', politician_path(@politician.id), :method => 'delete') %>

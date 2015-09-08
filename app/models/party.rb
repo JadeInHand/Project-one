@@ -15,5 +15,4 @@
 
 class Party < ActiveRecord::Base
 	has_many :politicians
-	belongs_to :party
 end
