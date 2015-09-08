@@ -8,6 +8,11 @@
 	<ul>Members:</ul><li><%= @party.members %></li>
 	<ul>History:</ul><li><%= @party.history %></li>
 
+	<a>
+		<% @party.politicians.each do |politician| %>
+			<%= link_to(image_tag(politician.image, :class => "smallthumb"), politician) %>
+		<% end %>
+	</a>
 	<p>
 		<%= link_to 'Edit', edit_party_path %>
 		<%= button_to('Delete', party_path(@party.id), :method => 'delete') %>
