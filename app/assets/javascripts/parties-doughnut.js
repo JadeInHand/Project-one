@@ -55,9 +55,11 @@ var partyData = [
 				}
 			];
 			window.onload = function(){
-				var ctx = document.getElementById("chart-area").getContext("2d");
-				ctx.canvas.width = 400;
-				ctx.canvas.height = 400; // had to force the canvas size on each reload as it was expanding the graph due to the high graphical details settings within chart.js
-				window.myDoughnut = new Chart(ctx).Doughnut(partyData, { responsive : false });
+				if ($('#chart-area').length > 0) {
+					var ctx = document.getElementById("chart-area").getContext("2d");
+					ctx.canvas.width = 400;
+					ctx.canvas.height = 400; // had to force the canvas size on each reload as it was expanding the graph due to the high graphical details settings within chart.js
+					window.myDoughnut = new Chart(ctx).Doughnut(partyData, { responsive : false });	
+				};
 			};
 
