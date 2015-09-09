@@ -6,6 +6,7 @@
 	<p> <%= @politician.location %> </p>
 
 	<% unless @politician.party.nil? %>
+		<h2> <%= @politician.name %> is a party of the <%= link_to "#{ @politician.party.name }", party_path(@politician.party_id) %>:</h2>
 		<p> 
 		<%= link_to (image_tag "#{@politician.party.emblem}", :class => "polindex"), party_path(@politician.party_id) %> 
 		</p>
