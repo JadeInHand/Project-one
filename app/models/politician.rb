@@ -12,8 +12,8 @@
 #  updated_at     :datetime         not null
 #  branch_id      :integer
 #  party_id       :integer
-#  lng            :float
-#  lat            :float
+#  longitude      :float
+#  latitude       :float
 #
 
 class Politician < ActiveRecord::Base
