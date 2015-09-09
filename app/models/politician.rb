@@ -12,8 +12,13 @@
 #  updated_at     :datetime         not null
 #  branch_id      :integer
 #  party_id       :integer
+#  lng            :float
+#  lat            :float
 #
 
 class Politician < ActiveRecord::Base
 	belongs_to :party
+	geocoded_by :location
+	validates :location, :presence => true
+	after_validation :geocode
 end
