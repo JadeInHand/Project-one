@@ -57,6 +57,11 @@ img.homeflag {
   display: inline-block;
 }
 
+.map-canvas {
+	width: 500px;
+	height: 500px;
+}
+
 .smallthumb img {
   max-height: 65px;
 }
@@ -148,6 +153,35 @@ div.navlinks {
 
 a.navlinks:hover {
 	text-decoration: line-through;
+}
+
+div.homelinker {
+	position: absolute;
+	top: 15px;
+	left: 0;
+	background: rgba( 255, 255, 255, 0.7 );
+	width: 100%;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	height: 30%;
+}
+
+
+div.homelinker h3 {
+  	bottom: 0;
+  	left: 0;
+}
+
+div.homelinker a:link {
+	color: rgb(0, 53, 128);
+}
+
+div.homelinker a:visited {
+	color: rgb(0, 53, 128);
+}
+
+div.panel:hover div.homelinker {
+  	height: 100%;
 }
 
 
