@@ -1,17 +1,24 @@
 
 <div class="info">
-	<h1>HOME</h1>
-	<ul>
-		<div class="firstcircle">
-			<p><%= link_to (image_tag "Parliament_of_Finland1.jpg", :class => "polindex"), branches_path %></p>
+	<h1>Finnish Politics Education Site</h1>
+	<div class="panel">
+		<div class="homelink">
+			<h3><a href="/branches">Parliament<span class="link-spanner"></span></a><h3>
 		</div>
-		<div class="secondcircle">
-			<p><%= link_to "Parties", parties_path %></p>
+		<%= link_to (image_tag "Parliament_of_Finland1.jpg"), branches_path %>
+	</div>
+	<div class="panel">
+		<div class="homelink">
+			<h3><a href="/parties">Parties<span class="link-spanner"></span></a></h3>
 		</div>
-		<div class="thirdcircle">
-			<p><%= link_to "Politicians", politicians_path %></p>
+		<%= link_to (image_tag "parliament.jpg"), parties_path %>
+	</div>
+	<div class="panel">
+		<div class="homelink">
+			<h3><a href="/politicians">Politicians<span class="link-spanner"></span></a></h3>
 		</div>
-	</ul>
+		<p><%= link_to (image_tag "sauli.jpg"), politicians_path %></p>
+	</div>
 </div>
 
 

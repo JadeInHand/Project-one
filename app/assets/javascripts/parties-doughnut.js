@@ -54,12 +54,12 @@ var partyData = [
 					label: "Centre Party"
 				}
 			];
-			window.onload = function(){
-				if ($('#chart-area').length > 0) {
-					var ctx = document.getElementById("chart-area").getContext("2d");
-					ctx.canvas.width = 400;
-					ctx.canvas.height = 400; // had to force the canvas size on each reload as it was expanding the graph due to the high graphical details settings within chart.js
-					window.myDoughnut = new Chart(ctx).Doughnut(partyData, { responsive : false });	
-				};
-			};
+window.onload = function(){
+	if ($('#party-area').length > 0) {
+		var ctx = document.getElementById("party-area").getContext("2d");
+		ctx.canvas.width = 400;
+		ctx.canvas.height = 400; // had to force the canvas size on each reload as it was expanding the graph due to the high graphical details settings within chart.js
+		window.myDoughnut = new Chart(ctx).Doughnut(partyData, { responsive : false });	
+	};
+};
 

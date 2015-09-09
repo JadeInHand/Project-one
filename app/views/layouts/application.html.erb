@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ProjectOne</title>
+  <title>Finnish Governance</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -11,13 +11,15 @@
 	<nav>
 		<div class="links">
 			<%= image_tag "Flag_of_Finland.svg.png", :class => "miniflag" %>
-			<a><%= link_to 'Home', '/', :class =>"navlinks" %></a>
-			<a><%= link_to 'Branches of Government', branches_path, :class =>"navlinks" %></a>
-			<a><%= link_to 'Create Branch', new_branch_path, :class =>"navlinks" %></a>
-			<a><%= link_to 'Politicians', politicians_path, :class =>"navlinks" %></a>
-			<a><%= link_to 'Create Politician', new_politician_path, :class =>"navlinks" %></a>
-			<a><%= link_to 'Parties', parties_path, :class =>"navlinks" %></a>
-			<a><%= link_to 'New Party', new_party_path, :class =>"navlinks" %></a>
+			<div class="navlinks">
+				<a><%= link_to 'Home', '/', :class =>"navlinks" %></a>
+				<a><%= link_to 'Branches of Government', branches_path, :class =>"navlinks" %></a>
+				<a><%= link_to 'Create Branch', new_branch_path, :class =>"navlinks" %></a>
+				<a><%= link_to 'Politicians', politicians_path, :class =>"navlinks" %></a>
+				<a><%= link_to 'Create Politician', new_politician_path, :class =>"navlinks" %></a>
+				<a><%= link_to 'Parties', parties_path, :class =>"navlinks" %></a>
+				<a><%= link_to 'New Party', new_party_path, :class =>"navlinks" %></a>
+			</div>
 		</div>
 	</nav>
 </div>
