@@ -1,28 +1,22 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This site is a Educational Site on basic information regarding Finnish Politics, the Parties & the Structure of decison making.
 
-Things you may want to cover:
+The site will allow you to browse through the information available, in order to edit you must be logged in as a user with admin privlidges which can only be provided through the console. There is no option to add this through the site.
 
-* Ruby version
+If admin privlidges are enabled, you will see options to Create, Update & Delete. Otherwise the site is Read only.
 
-* System dependencies
+== TOOLS
 
-* Configuration
+This site includes a gem for BCrypt in order to keep password information undisclosed. 
 
-* Database creation
+== RECOMMENDATIONS
 
-* Database initialization
+If setting this site up for your own purposes you must add your own Data, therefore this could be used for any Parliamentary Democracies website.
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+If this is the case, ensure you rake db:migrate to include all relevant database structure. Please refer to the annotation within the models files to aid in what data to retain & capture for your own site.
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+
+
+

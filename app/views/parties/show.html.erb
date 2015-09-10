@@ -3,10 +3,10 @@
 
 	<p><%= image_tag @party.emblem, :class => "thumb" %></p>
 
-	<ul><li class="branch-text">Ideology: <%= @party.ideology %></li>
-	<li class="branch-text">Seats:  <%= @party.seats %></li>
-	<li class="branch-text">Members: <%= @party.members %></li>
-	<li class="branch-text">History: <%= @party.history %></li>
+	<ul><p class="branch-text">Ideology: <%= @party.ideology %></p>
+	<p class="branch-text">Seats:  <%= @party.seats %></p>
+	<p class="branch-text">Members: <%= @party.members %></p>
+	<p class="branch-text">History: <%= @party.history %></p>
 	</ul>
 
 	<a>
@@ -17,10 +17,12 @@
 		</div>
 		<% end %>
 	</a>
-	<% if @current_user && @current_user.admin? %>
-		<p>
-			<%= link_to 'Edit', edit_party_path %>
-			<%= button_to('Delete', party_path(@party.id), :method => 'delete') %>
-		</p>
-	<% end %>
+	<p>
+		<% if @current_user && @current_user.admin? %>
+			<p>
+				<%= link_to 'Edit', edit_party_path %>
+				<%= button_to('Delete', party_path(@party.id), :method => 'delete') %>
+			</p>
+		<% end %>
+	</p>
 </div>
