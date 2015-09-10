@@ -16,6 +16,20 @@ If setting this site up for your own purposes you must add your own Data, theref
 
 If this is the case, ensure you rake db:migrate to include all relevant database structure. Please refer to the annotation within the models files to aid in what data to retain & capture for your own site.
 
+== INCLUDED
+
+The information included in the deployed version available at finnish-governance.heroku.com:
+
+Parliament: The structure, division of power & roles of the different sections at the top level of government.
+
+Politicians: Gives details on Politicians, their previous works, role, & current party.
+
+Parties: Provided details are number of seats currently held in Parliament, current membership base nationally. A brief History & Ideology section to give an idea of the different ideals held by those Parties. 
+
+Enjoy.
+
+JadeInHand
+
 
 
 

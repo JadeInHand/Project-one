@@ -9,6 +9,7 @@ class BranchesController < ApplicationController
 
   def new
   	@branches = Branch.new
+    redirect_to root_path unless @current_user && @current_user.admin?
   end
 
   def create
@@ -18,6 +19,7 @@ class BranchesController < ApplicationController
 
   def edit
   	@branch = Branch.find params[:id]
+    redirect_to root_path unless @current_user && @current_user.admin?
   end
 
   def destroy

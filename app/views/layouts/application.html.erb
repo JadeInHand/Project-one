@@ -13,7 +13,7 @@
 			<%= image_tag "Flag_of_Finland.svg.png", :class => "miniflag" %>
 			<div class="navlinks">
 				<a><%= link_to 'Home', '/', :class =>"navlinks" %></a>
-				<a><%= link_to 'Branches of Government', branches_path, :class =>"navlinks" %></a>
+				<a><%= link_to 'Parliament', branches_path, :class =>"navlinks" %></a>
 				<a><%= link_to 'Politicians', politicians_path, :class =>"navlinks" %></a>
 				<a><%= link_to 'Parties', parties_path, :class =>"navlinks" %></a>
 				<% if @current_user && @current_user.admin? %>
@@ -24,8 +24,6 @@
 				<% if @current_user && @current_user.present? %>
 					<%= link_to "Edit Profile", edit_user_path( @current_user ), :class => "navlinks" %>
 					<%= link_to "Logout #{ @current_user.name }", login_path, :method => 'delete', :class => "navlinks" %>
-				<% else %>
-					<%= link_to 'Login', login_path, :class => "navlinks" %>
 				<% end %>
 			</div>
 		</div>
