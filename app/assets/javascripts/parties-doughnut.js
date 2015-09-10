@@ -55,11 +55,13 @@ var partyData = [
 				}
 			];
 window.onload = function(){
+	console.log('does this shit even work?');
 	if ($('#party-area').length > 0) {
-		var ctx = document.getElementById("party-area").getContext("2d");
-		ctx.canvas.width = 400;
-		ctx.canvas.height = 400; // had to force the canvas size on each reload as it was expanding the graph due to the high graphical details settings within chart.js
-		window.myDoughnut = new Chart(ctx).Doughnut(partyData, { responsive : false });	
+		console.log('initializing the partychart');
+		var ctxtwo = document.getElementById("party-area").getContext("2d");
+		ctxtwo.canvas.width = 400;
+		ctxtwo.canvas.height = 400; // had to force the canvas size on each reload as it was expanding the graph due to the high graphical details settings within chart.js
+		window.myDoughnuttwo = new Chart(ctxtwo).Doughnut(partyData, { responsive : false });	
 	};
 };
 

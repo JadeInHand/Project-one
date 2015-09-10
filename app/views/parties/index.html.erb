@@ -4,6 +4,11 @@
 		<h2>Seats in <%= link_to "Cabinet", branch_path(@parliament) %></h2>
 		<canvas id="party-area"/>
 	</div>
+	<div id="canvas-holder">
+		<h2>Total Membership by Party</h2>
+		<canvas id="membership-area"/>
+	</div>
+
 	<h1>Parties and their Emblem's</h1>
 	<% @parties.each do |party| %>
 		<% if party.emblem? %>
