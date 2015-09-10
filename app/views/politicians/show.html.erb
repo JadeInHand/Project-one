@@ -1,5 +1,7 @@
 <div class="info">
-	<h1 class="branch-text"><%= raw @politician.name %></h1>	
+	<p>
+		<h1 class="branch-text"><%= raw @politician.name %></h1>
+	</p>	
 	<h3 class="branch-text"> <%= link_to "#{ @politician.role }", branch_path(@politician.branch_id) %> </h3>
 	<p class="branch-text"> <%= image_tag @politician.image, :class => "thumb" %> </p>
 	<p class="branch-text"> <%= @politician.previous_works %> </p>
