@@ -124,7 +124,7 @@ window.onload = function(){
 		console.log('initializing the partychart');
 		var ctxtwo = document.getElementById("party-area").getContext("2d");
 		ctxtwo.canvas.width = 400;
-		ctxtwo.canvas.height = 400; // had to force the canvas size on each reload as it was expanding the graph due to the high graphical details settings within chart.js
+		ctxtwo.canvas.height = 400;
 		window.myDoughnuttwo = new Chart(ctxtwo).Doughnut(partyData, { responsive : false });	
 	};
 };
