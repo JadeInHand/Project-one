@@ -3,7 +3,7 @@
 	<h3 class="branch-text"> <%= link_to "#{ @politician.role }", branch_path(@politician.branch_id) %> </h3>
 	<p class="branch-text"> <%= image_tag @politician.image, :class => "thumb" %> </p>
 	<p class="branch-text"> <%= raw @politician.previous_works %> </p>
-	<p>
+	<p class="branch-text">
 	<p class="branch-text"> <a class="branch-text" href="https://www.google.com.au/maps/place/<%= @politician.location.tr(' ', ',+') %>"><%= @politician.location %></a> </p>
 	</p>
 
