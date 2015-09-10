@@ -2,6 +2,6 @@
 	<h1><strong> Branches of Government </strong> </h1>
 
 	<% @branches.order(:id).each do |branch| %>
-		<h3><%= link_to( branch.name, branch ) %></h3>
+		<h3 class="branchname"><%= link_to( branch.name, branch ) %></h3>
 	<% end %>
 </div>
