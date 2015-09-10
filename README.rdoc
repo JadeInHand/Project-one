@@ -10,6 +10,12 @@ If admin privlidges are enabled, you will see options to Create, Update & Delete
 
 This site includes a gem for BCrypt in order to keep password information undisclosed. 
 
+Chart.js was used to include infographic doughnut graph to show seats hold & total members of parties.
+
+Images & information gathered from open sources websites.
+
+All rights for images belong to the original owners.
+
 == RECOMMENDATIONS
 
 If setting this site up for your own purposes you must add your own Data, therefore this could be used for any Parliamentary Democracies website.
@@ -18,7 +24,7 @@ If this is the case, ensure you rake db:migrate to include all relevant database
 
 == INCLUDED
 
-The information included in the deployed version available at finnish-governance.heroku.com:
+The information included in the deployed version available at finnish-governance.heroku.com is the 3P's:
 
 Parliament: The structure, division of power & roles of the different sections at the top level of government.
 
@@ -29,6 +35,7 @@ Parties: Provided details are number of seats currently held in Parliament, curr
 Enjoy.
 
 JadeInHand
+
 
 
 
