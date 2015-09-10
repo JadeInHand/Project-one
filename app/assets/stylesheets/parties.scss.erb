@@ -21,7 +21,8 @@ a.navlinks {
 	font-family: 'Lato', sans-serif;
 	font-weight: 700;
 	text-align: right;
-	transition: font-size 0.5s ease-in-out;
+	-webkit-transition: font-size 0.7s ease-in-out;
+	transition: font-size 0.7s ease-in-out;
 	font-size: 18px;
 }
 
@@ -41,6 +42,20 @@ a.navlinks {
 	border-radius: 3px;
 	overflow: auto;
 	border-radius: 1%;
+}
+
+.reindeer {
+	max-width: 120px;
+	width: 120px;
+	text-align: center;
+	-webkit-transition: all 3.5s ease-in-out;
+	transition: all 3.5s ease-in-out;
+}
+
+.reindeer:active {
+	-webkit-transform: rotate(2160deg);
+	transform: rotate(2160deg);
+	width: 200px;
 }
 
 img.homeflag {
@@ -94,6 +109,7 @@ div a.navlinks:visited {
 	max-width: 15em;
 	width: 100%;
 	border-radius: 3%;
+	-webkit-transition: max-width 0.7s ease-in-out;
 	transition: max-width 0.7s ease-in-out;
 }
 
@@ -110,18 +126,18 @@ div a.navlinks:visited {
 	max-width: 8em;
 	width: 100%;
 	border-radius: 30%;
+	-webkit-transition: all 0.7s ease-in-out;
 	transition: all 0.7s ease-in-out;
 }
 
 .polindex:hover {
 	max-width: 11em;
-	-webkit-transform: rotate(360deg);
-	transform: rotate(360deg);
 }
 
 .branchname {
 	font-size: 1.17em;
-	transition: font-size 0.5s ease-in-out;
+	-webkit-transition: all 0.7s ease-in-out;
+	transition: font-size 0.7s ease-in-out;
 }
 
 .branchname:hover {
@@ -145,8 +161,8 @@ div.homelink {
 	left: 0;
 	background: rgba( 255, 255, 255, 0.7 );
 	width: 100%;
-	-webkit-transition: all 0.5s;
-	transition: all 0.5s;
+	-webkit-transition: all 0.7s;
+	transition: all 0.7s;
 	height: 30%;
 }
 
@@ -165,6 +181,15 @@ div.homelink a:visited {
 
 div.panel:hover div.homelink {
   	height: 100%;
+}
+
+.homelink a {
+	-webkit-transition: all 0.7s ease-in-out;
+	transition: all 0.7s ease-in-out;
+}
+
+.homelink a:hover {
+	font-size: 30px;
 }
 
 div.navlinks {
@@ -191,15 +216,27 @@ div.homelinker {
 	left: 0;
 	background: rgba( 255, 255, 255, 0.7 );
 	width: 100%;
-	-webkit-transition: all 0.5s;
-	transition: all 0.5s;
+	-webkit-transition: all 0.7s;
+	transition: all 0.7s;
 	height: 30%;
 }
 
+/* The reason for differenciation between homelink & homelinker, is that the final image of "Politician" was slightly smaller than the others & was causing a strange effect with the link spnanner, changing the class & differetiating CSS fixed the issue.*/
 
 div.homelinker h3 {
   	bottom: 0;
   	left: 0;
+  	-webkit-transition: all 0.7s ease-in-out;
+  	transition: all 0.7s ease-in-out;
+}
+
+.homelinker a {
+	-webkit-transition: all 0.7s ease-in-out;
+	transition: all 0.7s ease-in-out;
+}
+
+.homelinker a:hover {
+	font-size: 30px;
 }
 
 div.homelinker a:link {
