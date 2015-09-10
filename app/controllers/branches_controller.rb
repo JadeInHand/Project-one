@@ -29,7 +29,7 @@ class BranchesController < ApplicationController
   def update
   	@branch = Branch.find params[:id]
   	if @branch.update branch_params
-  		redirect_to root_path
+  		redirect_to branch_path(@branch.id)
   	else
   		render :edit
   	end

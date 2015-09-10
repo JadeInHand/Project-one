@@ -1,13 +1,15 @@
 <div class="info">
-	<h1><%= raw @politician.name %></h1>	
-	<h3> <%= link_to "#{ @politician.role }", branch_path(@politician.branch_id) %> </h3>
-	<p> <%= image_tag @politician.image, :class => "thumb" %> </p>
-	<p> <%= raw @politician.previous_works %> </p>
-	<p> <a href="https://www.google.com.au/maps/place/<%= @politician.location.tr(' ', ',+') %>"><%= @politician.location %></a> </p>
+	<h1 class="branch-text"><%= raw @politician.name %></h1>	
+	<h3 class="branch-text"> <%= link_to "#{ @politician.role }", branch_path(@politician.branch_id) %> </h3>
+	<p class="branch-text"> <%= image_tag @politician.image, :class => "thumb" %> </p>
+	<p class="branch-text"> <%= raw @politician.previous_works %> </p>
+	<p>
+	<p class="branch-text"> <a class="branch-text" href="https://www.google.com.au/maps/place/<%= @politician.location.tr(' ', ',+') %>"><%= @politician.location %></a> </p>
+	</p>
 
 	<% unless @politician.party.nil? %>
-		<h2> <%= @politician.name %> is a part of the <%= link_to "#{ @politician.party.name }", party_path(@politician.party_id) %>:</h2>
-		<p> 
+		<h2 class="branch-text"> <%= @politician.name %> is a part of the <%= link_to "#{ @politician.party.name }", party_path(@politician.party_id) %>:</h2>
+		<p class="branch-text"> 
 		<%= link_to (image_tag "#{@politician.party.emblem}", :class => "polindex"), party_path(@politician.party_id) %> 
 		</p>
 	<% end %>

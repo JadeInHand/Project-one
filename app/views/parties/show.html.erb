@@ -3,10 +3,11 @@
 
 	<p><%= image_tag @party.emblem, :class => "thumb" %></p>
 
-	<ul>Ideology:</ul><li><%= @party.ideology %></li>
-	<ul>Seats:</ul><li><%= @party.seats %></li>
-	<ul>Members:</ul><li><%= @party.members %></li>
-	<ul>History:</ul><li><%= @party.history %></li>
+	<ul><li class="branch-text">Ideology: <%= @party.ideology %></li>
+	<li class="branch-text">Seats:  <%= @party.seats %></li>
+	<li class="branch-text">Members: <%= @party.members %></li>
+	<li class="branch-text">History: <%= @party.history %></li>
+	</ul>
 
 	<a>
 		<h3><strong> Images of <%= link_to "Politicians", politicians_path %> who are in this <%= link_to "Party", parties_path %> below: </strong></h3>
