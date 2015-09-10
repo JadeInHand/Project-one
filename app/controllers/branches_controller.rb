@@ -13,6 +13,7 @@ class BranchesController < ApplicationController
   end
 
   def create
+    redirect_to root_path unless @current_user && @current_user.admin?
   	@branch = Branch.create branch_params
   	redirect_to branch_path(@branch)
   end
@@ -23,12 +24,14 @@ class BranchesController < ApplicationController
   end
 
   def destroy
+    redirect_to root_path unless @current_user && @current_user.admin?
     branch = Branch.find params[:id]
     branch.destroy
     redirect_to branches_path
   end
 
   def update
+    redirect_to root_path unless @current_user && @current_user.admin?
   	@branch = Branch.find params[:id]
   	if @branch.update branch_params
   		redirect_to branch_path(@branch.id)

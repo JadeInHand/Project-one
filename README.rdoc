@@ -4,7 +4,7 @@ This site is a Educational Site on basic information regarding Finnish Politics,
 
 The site will allow you to browse through the information available, in order to edit you must be logged in as a user with admin privlidges which can only be provided through the console. There is no option to add this through the site.
 
-If admin privlidges are enabled, you will see options to Create, Update & Delete. Otherwise the site is Read only.
+If admin privlidges are enabled, you will see options to Create, Update & Delete. Otherwise the site is Read only. Login for admin is located at "/login". To create a new account go to "/users/new". If you wish to update information on my current hosted page on heroku, please email me at cpurcell22@gmail.com with what you would like to replace & what you will be replacing it with, otherwise feel free to deploy this on your own at any time, admin privilidges can be given to ones self through rails console.
 
 == TOOLS
 

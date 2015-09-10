@@ -8,8 +8,8 @@ class ApplicationController < ActionController::Base
   private 
   def fetch_current_user
   	if session[:user_id].present?
-  		@current_user = User.find_by :id => session[:user_id] #use .find_by as it will throw back nil rather than an error. .find will sometimes throw an error.
-  		session[:user_id] = nil unless @current_user.present? # stops trying to log this person in. does
+  		@current_user = User.find_by :id => session[:user_id] 
+  		session[:user_id] = nil unless @current_user.present? 
   	end
   end
 end
