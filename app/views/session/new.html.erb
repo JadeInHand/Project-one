@@ -1,0 +1,13 @@
+<div class="info">
+	<h2>Login</h2>
+	<%= form_tag '/login' do  %>
+	  <p></p>
+		  <%= label_tag :email %>
+		  <%= text_field_tag :email %>
+	  <p></p>
+		  <%= label_tag :password %>
+		  <%= password_field_tag :password %>
+	  <p></p>
+	  	<%= submit_tag 'Login to Edit' %>
+	<% end %>
+</div>

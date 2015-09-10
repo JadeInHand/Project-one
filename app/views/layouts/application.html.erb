@@ -20,6 +20,12 @@
 				<a><%= link_to 'Create Politician', new_politician_path, :class =>"navlinks" %></a>
 				<a><%= link_to 'Parties', parties_path, :class =>"navlinks" %></a>
 				<a><%= link_to 'New Party', new_party_path, :class =>"navlinks" %></a>
+				<% if @current_user.present? %>
+					<%= link_to "Edit Profile", edit_user_path( @current_user ), :class => "navlinks" %>
+					<%= link_to "Logout #{ @current_user.name }", login_path, :method => 'delete', :class => "navlinks" %>
+				<% else %>
+					<%= link_to 'Login', login_path, :class => "navlinks" %>
+				<% end %>
 			</div>
 		</div>
 	</nav>
