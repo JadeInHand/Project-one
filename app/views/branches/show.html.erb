@@ -6,10 +6,11 @@
 		<li class="branch-text"><%= @branch.powers %></li>
 		<li class="branch-text"><%= @branch.history %></li>
 	</ul>
-
-	<p>
-		<%= link_to 'Edit', edit_branch_path %>
-		<%= button_to('Delete', branch_path(@branch.id), :method => 'delete') %>
-	</p>
+	<% if @current_user && @current_user.admin? %>
+		<p>
+			<%= link_to 'Edit', edit_branch_path %>
+			<%= button_to('Delete', branch_path(@branch.id), :method => 'delete') %>
+		</p>
+	<% end %>
 </div>
 

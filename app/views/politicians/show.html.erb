@@ -4,7 +4,7 @@
 	<p class="branch-text"> <%= image_tag @politician.image, :class => "thumb" %> </p>
 	<p class="branch-text"> <%= @politician.previous_works %> </p>
 	<p>
-	<p class="branch-text"> <a class="branch-text" href="https://www.google.com.au/maps/place/<%= @politician.location.tr(' ', ',+') %>"><%= @politician.location %></a> </p>
+		<p class="branch-text"> <a class="branch-text" href="https://www.google.com.au/maps/place/<%= @politician.location.tr(' ', ',+') %>"><%= @politician.location %></a> </p>
 	</p>
 
 	<% unless @politician.party.nil? %>
@@ -13,10 +13,12 @@
 		<%= link_to (image_tag "#{@politician.party.emblem}", :class => "polindex"), party_path(@politician.party_id) %> 
 		</p>
 	<% end %>
-	<p>
-		<%= link_to 'Edit', edit_politician_path %>
-		<%= button_to('Delete', politician_path(@politician.id), :method => 'delete') %>
-	</p>
+	<% if @current_user && @current_user.admin? %>
+		<p>
+			<%= link_to 'Edit', edit_politician_path %>
+			<%= button_to('Delete', politician_path(@politician.id), :method => 'delete') %>
+		</p>
+	<% end %>
 </div>
 
 
