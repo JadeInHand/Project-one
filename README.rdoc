@@ -1,5 +1,7 @@
 == README
 
+https://finnish-governance.herokuapp.com/
+
 This site is a Educational Site on basic information regarding Finnish Politics, the Parties & the Structure of decison making.
 
 The site will allow you to browse through the information available, in order to edit you must be logged in as a user with admin privlidges which can only be provided through the console. There is no option to add this through the site.
