@@ -1,6 +1,6 @@
-== README
-
 https://finnish-governance.herokuapp.com/
+
+== README
 
 This site is a Educational Site on basic information regarding Finnish Politics, the Parties & the Structure of decison making.
 
@@ -37,9 +37,3 @@ Parties: Provided details are number of seats currently held in Parliament, curr
 Enjoy.
 
 JadeInHand
-
-
-
-
-
-
